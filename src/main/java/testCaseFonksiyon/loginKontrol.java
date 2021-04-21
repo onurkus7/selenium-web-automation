@@ -33,8 +33,6 @@ public class loginKontrol extends BasePage {
         veriyiDoldurma(kullaniciAdi,username);
         veriyiDoldurma(sifre,passwd);
 
-        //driver.findElement(kullaniciAdi).sendKeys("onuronur204035");
-        //driver.findElement(sifre).sendKeys("Pi3RUcGpkQMQtJf");
 
         element(girisButon).click();
         String girisKontrol=driver.findElement(By.xpath("/html/body/div[1]/header/div[3]/div/div/div/div[3]/div/div[1]/div/div[2]/span")).getText();
