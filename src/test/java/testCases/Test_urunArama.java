@@ -1,7 +1,6 @@
 package testCases;
 
 import org.junit.Test;
-import testCaseFonksiyon.loginKontrol;
 import testCaseFonksiyon.urunArama;
 import utils.BaseTest;
 

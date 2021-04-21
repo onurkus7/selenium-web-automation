@@ -4,13 +4,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.BasePage;
-
-import java.util.List;
 
 public class urunArama extends BasePage {
 
@@ -27,7 +22,6 @@ public class urunArama extends BasePage {
 
     public void urunArama_Kontrol()
     {
-
         driver.get("https://www.gittigidiyor.com");
 
         veriyiDoldurma(urunAraBosluk,aranacakUrun+Keys.ENTER);
@@ -38,12 +32,10 @@ public class urunArama extends BasePage {
         Assert.assertEquals(ikincisayfaKontrol,"https://www.gittigidiyor.com/arama/?k=bilgisayar&sf=2");
         WebDriverWait wait = new WebDriverWait(driver , 2);
         driver.findElement(By.xpath("/html/body/div[5]/div[1]/div/div[2]/div[3]/div[2]/ul/li[1]/a/div/p/img")).click();
-        WebDriverWait wait1 = new WebDriverWait(driver , 2);
 
-        driver.findElement(By.id("add-to-basket")).click();
+        //driver.findElement(By.id("add-to-basket")).click();
         //String fiyat =driver.findElement(By.id("/html/body/div[3]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/div/div[1]/div[1]/div/div/div[2]")).getText();
         //System.out.println("FİYAT: "+fiyat);
-
 
 
     }
