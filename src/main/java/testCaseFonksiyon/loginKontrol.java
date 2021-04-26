@@ -18,8 +18,8 @@ public class loginKontrol extends BasePage {
     private By sifre=By.name("sifre");
     private By girisButon=By.id("gg-login-enter");
 
-    private String username="onuronur204035";
-    private String passwd="Pi3RUcGpkQMQtJf";
+    private String username="";
+    private String passwd="";
 
     public void login_Kontrol()
     {
